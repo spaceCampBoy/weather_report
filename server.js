@@ -5,7 +5,7 @@ const generator = require('./model/generate.js')
 const { alert } = require('./model/model.js')
 const { partition, findLast } = require('./util/utils.js')
 
-const web_service_port = 8080
+const web_service_port = process.env.PORT || 8080
 const web_socket_port = 8090
 
 const app = express()
